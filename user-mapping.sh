@@ -28,4 +28,4 @@ sed -i -e "s/^${USER}:\([^:]*\):[0-9]*/${USER}:\1:${USER_GID}/"  /etc/group
 
 chown -R ${USER_ID}:${USER_GID} ${USER_HOME}
 
-exec su - "${USER}" -s /bin/bash
+exec su - "${USER}" -s /bin/bash 
